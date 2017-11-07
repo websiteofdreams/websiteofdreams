@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			header {
+				text-align: center;
+				background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/TapasenBarcelona.JPG/1200px-TapasenBarcelona.JPG');
+			background-size: cover;
+			color: white;}
+		</style>
+		<title>Website of Dreams</title>
+	</head>
+		<body>
+			<h1>Website of dreams...</h1>
+			<p>It really is.</p>
+			<p2>alfajores</p2>
+		</body>
+</html>
