@@ -1,78 +1,129 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <link href="/normalize.css" rel="stylesheet">
-  <style>
-    header {
-      text-align: center;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/TapasenBarcelona.JPG/1200px-TapasenBarcelona.JPG');
-      background-size: cover;
-      color: white;
-    }
-    a {
-      color: black;
-    }
-    h1 {
-      font-size: 70px;
-    }
-    img {
-      margin: 40px 0px 0px 0px;
-      border: 7px solid black;
-      border-radius: 20px;
-    }
-    ul {
-      padding: 10px;
-      background: rgba(0,0,0,0.5);
-    }
-    li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-    }
-    article {
-      max-width: 500px;
-      padding: 20px;
-      margin: 0 auto;
-    }
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 36px;
-        padding: 5px;
-      }
-      li {
-        padding: 5px;
-        display: block;
-      }
-    }
-  </style>
+  <title>Spanish Cookbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='http://fonts.googleapis.com/css?family=Vast+Shadow' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <link rel="stylesheet" href="main.css">
+
+
 </head>
+
 <body>
-  <header>
-    <img src="/assets/jeff.png">
-      <!-- needs altering-->
-    <h1>Alfajores anonymous</h1>
-    <ul>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Best Poems</a></li>
-      <li><a href="#">Worst Poems</a></li>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Spanish Cookbook</a>
+  </div>
+
+  <div class="collapse navbar-collapse">
+  <ul class="nav navbar-nav navbar-right">
+      <li><a href="#recipes">Top Recipes</a></li>
+      <li><a href="#mission">About</a></li>
     </ul>
-  </header>
-  <article>
-    <h2>VHS umami pop-up trust fund</h2>
-    <p>Marfa church-key kitsch bicycle rights, 8-bit mixtape cardigan gentrify Echo Park. Street art swag brunch, next level roof party Schlitz hella organic keffiyeh selfies. You probably haven't heard of them polaroid hashtag +1, meggings biodiesel Portland High Life cray tumblr retro.</p>
-    <button>Like</button>
-  </article>
-  <article>
-    <h2>Sartorial synth Echo Park, roof party</h2>
-    <p>chambray you probably haven't heard of them pour-over viral selvage umami skateboard VHS post-ironic selfies. Wes Anderson gentrify fanny pack twee, bicycle rights bitters blog keffiyeh plaid flannel. Tonx irony cliche sustainable mlkshk bitters. Four loko leggings chambray Vice.</p>
-    <button>Like</button>
-  </article>
-  <article>
-    <h2>Forage food truck keytar master cleanse</h2>
-    <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
-    <button>Like</button>
-  </article>
-  <script>
-    $("button").on("click", function() {
-      alert("Clicked!");
-    });
-  </script>
+    </div>
+  </nav>
+  </div>
+
+
+
+
+  <div class='jumbotron'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-8'>
+
+          <h1>Tasty Spanish food to drive you loco</h1>
+
+        </div>
+        <div class='col-sm-4'>
+          <img src='http://chavagnes.org/blog4/wp-content/uploads/2011/04/bigHOLA.gif' class='img-responsive' height=200px width=200px>
+        </div>
+      </div> 
+
+                <form role='form' class='form-inline'>
+            <div class="form-group">
+          <label for="email">Sign up for more tasty recipes</label>
+          <input type="text" class='form-control' name="email" placeholder="Enter your email" >
+          <button type="submit" class='btn btn-success'>Send</button>
+          </div>
+          </form>
+    </div>
+  </div>
+
+  <div id="recipes" class="text-center">
+  <div class="container">
+  <h2><small>Top recipes</small><br />¡La comida!</h2>
+
+    <div class="row">
+      <div class='col-sm-4 '>
+      <img src='https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/08/alfajores-.jpg?itok=CoLao0WC' class="img-circle  center-block" height=350px>
+          <!-- let's change these to food pics?-->
+      <blockquote>
+  <p>The best (mejores) alfajores...</p>
+          <small>Source: <a href='https://www.bbcgoodfood.com/recipes/alfajores'>Recipe in English</a>
+              /
+            <a href='https://www.lacocinadegisele.com/receta-para-preparar-alfajores-de-maizena/'>Receta en español</a>
+              
+      </small>
+</blockquote>
+      </div> 
+      <div class='col-sm-4'>
+      <img src='images/person.jpg' class="img-circle  center-block">
+      <blockquote>
+  <p>My team are always far more productive after we order from Sam's. 40% more productive, in fact.</p>
+  <small>Miss McAdam, CEO Workplace Analytics</small>
+</blockquote>
+      </div> 
+      <div class='col-sm-4'>
+      <img src='images/person.jpg' class="img-circle  center-block">
+      <blockquote>
+  <p>We switched to Sam's Sarnies and won our first government contract the next day. Coincidence? I think not!</p>
+  <small>Mr Green, President Suspicion Inc.</small>
+</blockquote>
+      </div> 
+    </div>
+
+  </div>
+  </div>
+
+  <div id="mission" class='text-center'>
+  <div class="container">
+    <h2><small>Our mission</small><br />Join us in helping busy professionals eat healthily</h2>
+
+    <p class="lead">We believe that healthy workers are more productive workers.</p>
+    <p class="lead">Providing your team with a healthy lunch each day improves both motivation and morale.</p>
+    <p class="lead">We deliver healthy sandwiches, made with the best ingredients, to your workplace every day.</p>
+
+    <div id='social-buttons'>
+    <button class="btn btn-lg btn-twitter">Twitter</button>
+    <button class="btn btn-lg btn-facebook">Facebook</button>
+    <button class="btn btn-lg btn-pinterest">Pinterest</button>
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script type="text/javascript" src="dist/js/bootstrap.js"></script>
+
 </body>
+
+
+<!-- Sandwich from: © Kosoff | <a href="http://www.dreamstime.com/">Dreamstime Stock Photos</a> & <a href="http://www.stockfreeimages.com/">Stock Free Images</a> -->
+</html>
